@@ -1,0 +1,18 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: darkblue;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nava:hover {
+    text-decoration: underline;
+    /* Underline effect on hover */
+}

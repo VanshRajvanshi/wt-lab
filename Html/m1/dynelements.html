@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>DOM Manipulation</title>
+        <script>
+                function displayMessage() {
+                        var name = document.getElementById("name").value;
+                        document.getElementById("message").innerHTML = "Hello, " + name + "!";
+                }
+        </script>
+</head>
+
+<body>
+        <h1>Enter Your Name</h1>
+        <input type="text" id="name">
+        <button onclick="displayMessage()">Greet Me</button>
+        <p id="message"></p>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony Website Clone</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 120px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        /* Featured Products */
+        .featured {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .featured h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            width: 30%;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
+        .product p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Sony_logo.svg/2560px-Sony_logo.svg.png" alt="Sony Logo">
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Support</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="https://via.placeholder.com/1920x600" alt="Hero Banner">
+        <div class="hero-text">
+            Explore the Latest Innovations
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Product 1">
+                <h3>Sony Alpha Camera</h3>
+                <p>Experience professional photography with our best-in-class camera series.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Product 2">
+                <h3>Sony PlayStation 5</h3>
+                <p>The latest and greatest in home gaming entertainment.</p>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Product 3">
+                <h3>Sony Bravia TV</h3>
+                <p>Stunning 4K resolution for the ultimate viewing experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sony Corporation. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Example of JavaScript functionality: Dynamic Text on Hero
+        const heroText = document.querySelector('.hero-text');
+        const heroMessages = [
+            "Explore the Latest Innovations",
+            "Discover Sony's Newest Products",
+            "Enhance Your Entertainment"
+        ];
+        let currentMessage = 0;
+
+        function changeHeroText() {
+            heroText.textContent = heroMessages[currentMessage];
+            currentMessage = (currentMessage + 1) % heroMessages.length;
+        }
+
+        // Change the hero text every 5 seconds
+        setInterval(changeHeroText, 5000);
+    </script>
+    
+</body>
+</html>

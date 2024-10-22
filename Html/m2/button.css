@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+}
+
+.styled-button {
+    background-color: blue;
+    color: white;
+    padding: 15px25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.styled-button:hover {
+    background-color: darkblue;
+    /* Darker blue on hover */
+}
